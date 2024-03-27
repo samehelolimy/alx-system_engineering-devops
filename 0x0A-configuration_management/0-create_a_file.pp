@@ -6,4 +6,3 @@ file { '/tmp/school':
         content	=> 'I love Puppet'
 }
 
-
