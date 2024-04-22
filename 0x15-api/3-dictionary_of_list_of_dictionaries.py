@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""Export data in JSON format"""
+"""Exports data in JSON format"""
 
 if __name__ == "__main__":
 
@@ -18,8 +18,8 @@ if __name__ == "__main__":
         for task in todos:
             if task.get('userId') == user.get('id'):
                 taskDict = {"username": user.get('username'),
-                      "task": task.get('title'),
-                     "completed": task.get('completed')}
+                            "task": task.get('title'),
+                            "completed": task.get('completed')}
                 taskList.append(taskDict)
         todoAll[user.get('id')] = taskList
 
