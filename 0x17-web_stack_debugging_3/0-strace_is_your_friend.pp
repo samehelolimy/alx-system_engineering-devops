@@ -1,7 +1,7 @@
-# Fix JAVA  to java 
+# Fixes phpp extensions to php in the WordPres file
 
-exec { 'fix-javafile':
-  command => 'sed -i s/JAVA/java/g /var/www/html/wp-settings.java',
+exec { 'fix-wordpress':
+  command => 'sed -i s/phpp/php/g /var/www/html/wp-settings.php',
   path    => '/usr/local/bin/:/bin/'
 }
 
