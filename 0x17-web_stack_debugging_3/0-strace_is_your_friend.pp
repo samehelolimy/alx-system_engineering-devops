@@ -1,6 +1,7 @@
-# Fixes phpp  extensions to php 
+# fix JAVA  to java 
 
-exec { 'fix-phpfile':
-  command => 'sed -i s/phpp/php/g /var/www/html/wp-settings.php',
+exec { 'fix-javafile':
+  command => 'sed -i s/JAVA/java/g /var/www/html/wp-settings.php',
   path    => '/usr/local/bin/:/bin/'
 }
+
